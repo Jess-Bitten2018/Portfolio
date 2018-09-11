@@ -1,0 +1,636 @@
+* { margin: 0; padding: 0; vertical-align: baseline; outline: none; }
+.bg-home {
+	background-image: url("../images/home.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Define um estilo para home*/
+.sessao-home{
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	overflow-y: hidden;
+	
+}
+.sessao-home .logo { 
+	max-width: 200px;
+	margin-left: 130px;
+	
+}
+.sessao-home .titulo-home, .sessao-home .sub-titulo {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 40pt;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 50px;
+	position: relative;
+	animation: animeBaixoPraCima 3s;
+}
+.sessao-home .sub-titulo {
+	font-family:'Rancho', cursive;
+	font-style: italic;
+	font-size: 38pt;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+.sessao-home .digite{
+	font-family: 'Lato', sans-serif;
+	font-size: 15pt;
+	color: #ffffff;
+	margin-top: 85px;
+	position: animeBaixoPraCima 3s;
+}
+.sessao-home .cep {
+	font-size: 15pt;
+	max-width: 200px;
+	width: 100%;
+	margin: 60px auto;
+	position: relative;
+	animation: animeBaixoPraCima 3s;
+}
+.sessao-home .cep input {
+	width: 100%;
+	text-align: left;
+	padding-right: 50px;
+}
+.sessao-home .cep .btn {
+	width: 40px;
+	height: 30px;
+	background-color: transparent;
+	border: 0;
+	color: #999;
+	position: absolute;
+	top: 3px;
+	right: 0px;
+}
+.opacity-3 { background-color: rgba(255,255,255,.8); }
+
+.btn-buscar {
+	margin:auto;
+	margin-top: 10px;
+	background-color: rgba(255, 163, 10, 0.8);
+	color: #ffffff;
+	font-size: 20pt;
+	max-width: 400px;
+	width: 100%;
+	border: 0;
+	position: relative;
+	animation: animeBaixoPraCima 3s;
+}
+.rodape-home{
+	max-width: 900px;
+	width: 100%;
+	position: fixed;
+	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.rodape-home .center-content {
+	position: relative;
+	animation: animeBaixoPraCima 3s;
+}
+
+.rodape-home .texto {
+	width: calc(100% - 80px);
+	float: left;
+}
+.rodape-home span {
+	color:#fff;
+	display: block;
+	font-size: 10pt;	
+}
+.rodape-home .texto-bol {
+	font-weight: bold;
+}
+.rodape-home .timeline {
+	position: relative;
+	max-width: 500px;
+	margin: auto;
+	animation: animeBaixoPraCima 3s;
+
+}
+.rodape-home .timeline span {
+	width: 40px;
+	height: 40px;
+	border: 2px solid rgba(255,255,255,0.5);
+	border-radius: 50%;
+	display: block;
+}
+.rodape-home .timeline:before {
+	width: calc(50% - 75px);
+	height: 2px;
+	content: "";
+	background-color: rgba(255,255,255,0.5);
+	position: absolute;
+	left: 55px;
+	top: 50%;
+
+}
+.rodape-home .timeline:after {
+	width: calc(50% - 75px);
+	height: 2px;
+	content: "";
+	background-color: rgba(255,255,255,0.5);
+	position: absolute;
+	right: 55px;
+	top: 50%;
+	
+}
+.rodape-home .timeline span.cartao {
+	margin: auto;
+
+}
+.rodape-home .timeline span.moto {
+	float: right;
+
+}
+.rodape-home .timeline span i { 
+	color: #fff; 
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+}
+/*Fim do estilo da home*/
+
+/** ESTILO REFERENTE A PAG ENTRADAS.HTML  **/
+
+.entradas-body {
+	background-color: #242321;
+	color: white;
+	font-weight: sans-serif;
+	overflow-x: hidden;
+}
+
+.entradas-body p {
+	margin: 5px 0;
+}
+
+.entradas-body p {
+	font-size: 10pt;
+}
+
+.entradas-body h6 {
+	font-size: 15pt;
+	font-weight: bold,sans-serif;
+}
+
+.entradas-body h5 {
+	margin: auto;
+	display: table;
+}
+
+.entradas-btn {
+	cursor: pointer;
+    font-size: 1.125rem;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    font-family: UnitedSansMed,Tahoma,Arial,Helvetica,sans-serif;
+    border-radius: 15px;
+}
+
+.entradas-ul li {
+	display: inline;
+	background: none;
+	color: #525252;
+	margin-right: 20px;
+}
+
+.entradas-ul a {
+	color: white;
+	text-transform: uppercase;
+	font-size: 10pt;
+
+}
+
+.entradas-header {
+	padding-top: 10px;
+	background-color: #0d0d0c;
+	color: white;
+	height: 100px;
+}
+
+.entradas-header li {
+	text-transform: uppercase;
+	font-size: 10pt;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.entradas-tab {
+	padding: 20px 0;
+	color: white;
+}
+
+.entradas-tab a {
+	width: 150px;
+	text-align: center;
+	margin: 1px;
+}
+
+.entradas-tab div {
+	margin: 10px;
+}
+
+.entradas-tab li {
+	display: inline;
+}
+
+.entradas-tab ul {
+	margin:auto;
+	display: table;
+}
+
+.produto-preco span {
+	float: right;	
+}
+
+.footer-links {
+	background-color: #0c0c0b;
+	padding: 5px;
+	margin-top: 15px;
+}
+
+.footer-links a {
+	color: #525252;
+	font-weight: bold;
+}
+
+.footer-social {
+	margin-top: 10px;
+	background-color: #0c0c0b;
+}
+
+.footer-social img {
+	float: left;
+	margin: 10px;
+	height: 50px;
+}
+
+.footer-social h6 {
+	font-size: 12pt;
+	color: #525252;
+	margin-top: 69px;
+
+}
+
+/** FIM DO CSS PAG ENTRADAS.HTML **/
+
+
+/** ESTILO DO CSS PAG PIZZAS.HTML **/
+
+.modal-estilo {
+	color: black;
+	margin-right: 30px;
+}
+
+.modal-space {
+	padding: 5px;
+	margin-left: 15px;
+}
+
+.pizzas-img {
+	margin: auto;
+	height: 135px;
+	display: table;
+	margin-bottom: 10px;
+}
+
+.pizzas-btn {
+	width: 10px;
+}
+
+.pizzas-min-btn {
+	width: 150px;
+	cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: bold;
+    border: 0;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    margin-right: 10px
+}
+
+.conf-lista .btn {
+	margin: 0 5px;
+}
+
+
+/** FIM ESTILO DO CSS PAG PIZZAS.HTML **/
+
+
+/** ESTILO DO CSS PAG CARRINHO.HTML **/
+
+.rodape-principal .icons {
+	font-size: 30px;
+	margin: 15px;
+}
+
+.direita {
+	float: right;
+}
+
+.btn-cart {
+	margin-left: 30px;
+	width: 85%;
+	font-weight: bold;
+	padding: 3px 8px 5px 3px;
+    box-sizing: border-box;
+    font-family: UnitedSansMed,Tahoma,Arial,Helvetica,sans-serif;
+    border-radius: 10px;
+}
+
+.bg-color {
+	background-color: rgba(30,30,30,0.9);
+	padding:15px;
+}
+
+.separador {
+	border-right-left: 1px solid white;
+}
+
+/** FIM ESTILO DO CSS PAG CARRINHO.HTML **/
+
+/* Página de Cadastro dos Clientes*/
+
+.sessao-cad-cliente .accordion {
+ max-width: 500px;
+ width: 100%;
+ margin: 30px auto;
+ background-color: #222;
+}
+.sessao-cad-cliente .accordion label{
+	color:#fff;
+
+}
+.sessao-cad-cliente .accordion .card {
+	background-color: rgba(0,0,0,0.2);
+
+}
+.sessao-cad-cliente .card .card-header {
+	border: 1px solid rgba(0,0,0,0.5);
+	padding: 0;
+}
+.sessao-cad-cliente .card .card-header .btn-link {
+	width: 100%;
+	height: 100%;
+	color:#ffc107;
+	transition: all .3s ease-in-out;
+}
+.sessao-cad-cliente .card .card-header .btn-link:hover {
+	background-color: rgba(255,193,7,1);
+
+}
+.sessao-cad-cliente .card .card-header .btn-link:hover {
+	color:#000;
+	text-decoration: none;
+}
+.sessao-cad-cliente .card .card-header .btn-link:hover span {
+	color:#dc3545;
+
+}
+.sessao-cad-cliente .card .card-header .btn-link span{
+	color:#fff;
+	font-size: 9pt;
+}
+.sessao-cad-cliente .card .card-header em{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #ffc107;
+	color: #000;
+	border-radius: 50%;
+	font-size: 10pt;
+	font-style: normal;
+	display: inline-block;
+}
+.sessao-cad-cliente .card .form-check {
+	left: 0;
+	display: inline-block;
+}
+
+.sessao-cad-cliente .card .btn-continue {
+	margin: 10px auto;
+	padding: 05px;
+	display: table;
+	background-color: #ffc107;
+}
+.sessao-cad-cliente .card .btn-criarconta {
+	margin: 10px auto;
+	padding: 05px;
+	display: table;
+	background-color: #ffc107;
+}
+.sessao-cad-cliente .card label a {
+	color: #ffc107;
+
+}
+
+/*Fim da Página de Cadastro dos Clientes */
+
+/*Termos e condições*/
+
+.termos {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	background-color: rgba(30,30,30,0.9);
+	font-family: UnitedSansMed,Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 15pt;
+	padding: 20px;
+}
+.termos p {
+	font-size: 13pt;
+	margin-bottom: 20px;
+}
+
+.conf-lista {
+	margin: auto;
+}
+
+.conf-lista button {
+	margin: 2px;
+}
+
+.img-logo {
+	width: 190px;
+	height: 100px;
+}
+
+.marg li {
+	margin: 0px 2px 0px 2px;
+}
+
+.marg {
+	margin: 40px auto;
+}
+
+.conf-div {
+	text-align: center;
+	float: right;
+}
+	/*Fim dos termos e condições*/
+
+	/*Define um estilo para login*/
+.login-conta {
+	width: 100%;
+	max-width: 470px;
+	margin: auto;
+	background-color: rgba(30,30,30,0.9);
+	font-family: UnitedSansMed,Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 15pt;
+	padding: 20px;
+}  
+.login-conta  {
+	font-size: 13pt;
+	margin-bottom: 20px;
+}  
+    /*Fim do estilo do login*/
+
+
+   /*Define um estilo para login*/
+.login-conta .btn-entrar {
+	max-width: 150px;
+	width: 100%;
+	margin: 10px auto;
+	padding: 05px;
+	display: table;	
+} 
+.login-conta .form-check-label {
+	padding: 0;
+} 
+.login-conta .btn-link{
+	color: #ffc107;
+	font-size: 12pt;
+	display: block;
+} 
+   /*Fim do estilo do login*/
+
+.rodape-principal {	 
+	width: 100%; 
+	margin-bottom: 40px;
+}
+.rodape-principal .info { border-top: 1px solid #827c7b; }
+.rodape-principal p {
+	text-align: center;
+}
+.rodape-principal p a { color: #fff; } 
+
+.entradas-btn,
+.btn-cart { border-radius: .25rem; font-size: 1rem; font-weight: normal; padding: 5px; }
+.entradas-btn { max-width: 90%; }
+.row .col .entradas-btn { max-width: 100%; margin: 10px 0; }
+
+.hidden-link { display: none; }
+
+@keyframes animeBaixoPraCima {
+    from {
+        opacity:0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+
+input::-webkit-input-placeholder {color: #848384; font-size: 10pt; }
+input:-moz-placeholder { color: #848384; font-size: 10pt; }
+input::-moz-placeholder { color: #848384; font-size: 10pt; }
+input:-ms-input-placeholder {color: #848384; font-size: 10pt; }
+
+.sessao-home input::-webkit-input-placeholder {color: #848384; font-size: 13pt; }
+.sessao-home input:-moz-placeholder { color: #848384; font-size: 13pt; }
+.sessao-home input::-moz-placeholder { color: #848384; font-size: 13pt; }
+.sessao-home input:-ms-input-placeholder {color: #848384; font-size: 13pt; }
+
+@media screen and (max-width: 1199px) {
+	/*Define um estilo para home*/
+	.sessao-home .titulo-home { font-size: 33pt; }
+	.sessao-home .digite { margin-top: 30px; }
+	/*Fim do estilo da home*/
+}
+@media screen and (max-width: 1160px) {
+	/*Define um estilo para home*/
+	.sessao-home .titulo-home { margin-top: 20px; }
+	/*Fim do estilo da home*/
+}
+@media screen and (max-width: 991px) {
+	/*Define um estilo para home*/
+	.sessao-home .titulo-home { font-size: 26pt; }
+	.sessao-home .digite { margin-top: 30px; }
+	/*Fim do estilo da home*/
+}
+
+@media screen and (max-width: 768px) {
+	/*Define um estilo para home*/	
+	.sessao-home { overflow-y: auto; }
+	.sessao-home .logo { margin:15px auto auto; float: none; display: table; }
+    .sessao-home .titulo-home { font-size: 20pt; margin-top: 50px;}
+    .sessao-home .sub-titulo { font-size: 25pt; }
+	.sessao-home .digite {font-size: 13pt; margin-top: 50px; }
+    .sessao-home .cep  { font-size: 12pt; max-width: 170px; padding-bottom: 40px; margin-top: 70px; }
+	.btn-buscar { font-size: 12pt; max-width: 300px; }
+	.rodape-home { bottom: 20px; }
+	.rodape-home span { font-size: 9pt; }
+	.rodape-home .texto { font-size: 9pt;  }
+	.rodape-home .texto-bol { font-size: 10pt; }
+	.rodape-home .center-content { width: 50%; margin: auto auto 20px; display: table;}
+	.rodape-principal .footer-links ul{ margin-top: 20px; }
+	.rodape-principal .footer-links a { font-size: 13pt; margin-left: 110px; }
+	.rodape-principal .float-right { width: 100%; text-align: center;}
+	.footer-social h6{ margin-top: 30px; }
+    /*Fim do estilo da home*/
+
+    /*Define um estilo para cadastroClientes*/
+    .sessao-cad-cliente .titulo {
+    	font-size: 15pt;
+    }
+    .sessao-cad-cliente .card .card-header .btn-link span {
+    	display: block;
+    }
+        /*Fim do estilo do cadastroClientes*/
+    .navbar .conf-lista .btn {width: 100%;  margin-bottom: 5px; background-color: rgba(0,0,0,0.2); color: #fff; border-color: rgba(0,0,0,0.2); }    
+    .bg-dark { padding: 0; background-color: #fb761c !important;  }
+    .bg-dark .navbar-collapse {background-color: rgb(51, 51, 51);}
+
+    .hidden-link { display: block; }
+    .hidden-sm { display: none; }
+
+    input::-webkit-input-placeholder { font-size: 10pt; }
+	input:-moz-placeholder {  font-size: 10pt; }
+	input::-moz-placeholder {  font-size: 10pt; }
+	input:-ms-input-placeholder { font-size: 10pt; }
+}
+
+
+@media screen and (max-width: 499px) { 
+    /*Define um estilo para home*/ 
+    .rodape-home .center-content { width: 65%;}
+    /*Fim do estilo da home*/
+}
+
+@media screen and (max-width: 400px) {  
+
+}
+
