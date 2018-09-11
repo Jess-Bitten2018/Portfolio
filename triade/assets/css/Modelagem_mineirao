@@ -1,0 +1,26 @@
+Modelagem Mineirão.
+
+=> Mineirão (Diagrama de dados)
+
+Tabelas:
+
+1- User
+UserId (int)
+Email (varchar (100))
+Password (varchar (max))
+IsActive (bit)
+
+2- Person
+PersonId
+UserId (int)
+Name (varchar(100))
+Cpf (varchar(11))
+Phone (varchar (25))
+Createdat (datetime)
+
+3- Userlog
+UserLogId (int)
+
+
+
+

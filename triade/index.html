@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Tríade</title>
+  <link rel="stylesheet" href="assets/css/lib/framework7.min.css">
+  <link rel="stylesheet" href="assets/css/icons.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+  <main id="app">
+    <div class="statusbar"></div>
+    <div class="view view-main"></div>
+    <nav class="panel panel-left panel-cover">
+      <div class="page page-transparent">
+        <div class="list links-list">
+          <ul>
+            <li>
+              <div class="user">
+                <i class="f7-icons">person_fill</i>
+                <span>Bel Costa</span>
+              </div>
+            </li>
+            <li>
+              <a href="/login/" class="panel-close"><span>Login</span></a>
+            </li>
+            <li>
+              <a href="/fale-conosco/" class="panel-close"><span>Fale Conosco</span></a>
+            </li>
+            <li>
+              <a href="/cadastro/" class="panel-close"><span>Cadastro</span></a>
+            </li>
+            <li>
+              <a href="/sair/" class="panel-close"><span>Sair</span></a>
+            </li>
+            <li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+  </main>
+  <!--
+  <script src="cordova.js"></script>
+  -->
+  <script src="assets/js/lib/framework7.min.js"></script>
+  <script src="assets/js/routes.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

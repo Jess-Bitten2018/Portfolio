@@ -1,0 +1,28 @@
+{
+	"eventos":[
+		{
+			"id_evento": "01",
+			"nome": "Evento jogo das oitavas de final",
+			"poster": "assets/images/01.jpg",
+			"horarios": ["10:30", "12:40", "14:30"]
+		},
+		{
+			"id_evento": "02",
+			"nome": "Evento jogo das quartas de final",
+			"poster": "assets/images/02.jpg",
+			"horarios": ["12:40", "14:30", "16:40", "20:30", "22:40"]
+		},
+		{
+			"id_evento": "03",
+			"nome": "Evento jogo da semefinal",
+			"poster": "assets/images/03.jpg",
+			"horarios": ["20:30", "22:40"]
+		},
+		{
+			"id_evento": "04",
+			"nome": "Evento jogo da final",
+			"poster": "assets/images/04.jpg",
+			"horarios": ["14:30", "16:40", "20:30"]
+		}			
+	]
+}

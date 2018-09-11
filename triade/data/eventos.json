@@ -1,0 +1,97 @@
+{
+  "filmes": [
+  	{
+  		"id": "001",
+  		"nome": "Vingadores Guerra mundial",
+      "video": "4jGRyEa2jhE",
+      "poster": "001.jpg",
+      "sinopse": "Thanos (Josh Brolin) enfim chega à Terra, disposto a reunir as Joias do Infinito. Para enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças entre alguns de seus integrantes.", 
+  		"elenco": "Robert Downey Jr, Chris Hemsworth, Mark Ruffalo, Scarlett Johanson, Jeremy Renner, Tom Holland, Paul Rudd.",
+      "dirigido_por": "Joe Russo, Anthony Russo",
+      "distribuidor": "Disney",
+      "pais_origem": "Estado Unidos",
+      "cinemas":[
+  			{
+	  			"nome": "Centerplex Lapa",
+	  			"sala": "3",
+          "sessao":["LEG", "3D"],
+          "horario": ["13:00", "15:50", "18:40"]
+  			},
+        {
+          "nome": "Cinemark Aricanduva",
+          "sala": "7",
+          "sessao":["LEG", "DUB", "3D"],
+          "horario": ["13:00", "15:50", "18:40", "21:30"]
+        },
+        {
+          "nome": "Cinemark Shopping Interlagos",
+          "sala": "10",
+          "sessao":["LEG", "DUB"],
+          "horario": ["13:00", "15:50", "18:40", "21:30", "00:20"]
+        },
+        {
+          "nome": "Espaço Itaú de Cinema Pompéia",
+          "sala": "12",
+          "sessao":["LEG", "DUB", "3D"],
+          "horario": ["18:40", "21:30", "00:20"]
+        }    			
+  		]
+  	},
+    {
+      "id": "002",
+      "nome": "Os Farofeiros",
+      "video": "EI-mvRW6FkU",
+      "poster": "002.jpg",
+      "sinopse": "Quatro colegas de trabalho se programam para curtir o feriado prolongado em uma casa de praia e, chegando lá, descobrem que se meteram em uma tremenda roubada. Para começar o destino não é Búzios, mas Maringuaba; a residência alugada é encontrada caindo aos pedaços, bem diferente do prometido; a praia está sempre cheia; e as confusões são inúmeras.", 
+      "elenco": "Maurício Manfrini, Cacau Protásio, Danielle Winits, Antônio Fragoso, Aline Riscado, Nilton Bicudo, Elisa Pinheiro, Charles Paraventi.",
+      "dirigido_por": "Roberto Santucci",
+      "distribuidor": "Downtown Filmes",
+      "pais_origem": "Brasil",
+      "cinemas":[
+        {
+          "nome": "Cinemark Shopping D",
+          "sala": "8",
+          "sessao":["LEG", "3D"],
+          "horario": ["13:00", "15:50"]
+        },
+        {
+          "nome": "Cinemark Metrô Santa Cruz",
+          "sala": "10",
+          "sessao":["LEG", "DUB", "3D"],
+          "horario": ["15:50", "18:40", "21:30"]
+        }       
+      ]
+    },
+    {
+      "id": "003",
+      "nome": "Verdade ou Desafio",
+      "video": "WWf6mu03QNM",
+      "poster": "003.jpg",
+      "sinopse": "TOlivia e seu grupo de amigos de férias no México são convencidos a brincar de \"Verdade ou Desafio\", em um prédio em ruínas, pelo misterioso Carter. Ao passar a maldição para os recém-conhecidos, Carter alerta o grupo sobre os riscos e regras do jogo, mas não é levado a sério até que essa presença demoníaca começa a assombrar os participantes — encurralados em uma trama de chantagens e perigos que parece conduzi-los a uma única saída: a morte.", 
+      "elenco": "Lucy Hale, Tyler Posey, Violett Beane, Nolan Gerard, Funk Hayden, Szeto Sophia, Taylor Ali.",
+      "dirigido_por": "Jeff Wadlow",
+      "distribuidor": "UNIVERSAL PICTURES",
+      "pais_origem": "Estado Unidos",
+      "cinemas":[
+        {
+          "nome": "Playarte Multiplex Marabá",
+          "sala": "3",
+          "sessao":["LEG", "DUB", "3D"],
+          "horario": ["13:00", "15:50", "18:40", "21:30"]
+        },
+        {
+          "nome": "Kinoplex Vila Olimpia",
+          "sala": "7",
+          "sessao":["LEG", "DUB", "3D"],
+          "horario": ["13:00", "15:50"]
+        },
+        {
+          "nome": "Cinemark Paulista",
+          "sala": "10",
+          "sessao":["LEG", "DUB"],
+          "horario": ["18:40", "21:30", "00:30"]
+        }       
+      ]
+    }  	
+  ]
+}

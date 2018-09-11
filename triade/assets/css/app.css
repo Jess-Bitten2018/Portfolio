@@ -1,0 +1,548 @@
+/*========================================================*/
+/*Início dos blocos de estilo referente ao geral*/
+
+/*Importa a font Leixo Demo*/
+@font-face {
+    font-family: 'Leixo Demo';
+    src: url('../fonts/leixo-demo-webfont.woff2') format('woff2'),
+         url('../fonts/leixo-demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Importa a font candara*/
+@font-face {
+    font-family: 'Candara';
+    src: url('../fonts/CANDARA.eot');
+    src: local('CANDARA'), 
+        url('../fonts/CANDARA.woff') format('woff'), 
+        url('../fonts/CANDARA.ttf') format('truetype');
+}
+
+/*Importa a Futurism Light*/
+@font-face {
+    font-family: "Futurism Light";
+    src: url("../fonts/futurism.eot?") format("eot"),
+        url("../fonts/futurism.woff") format("woff"),
+        url("../fonts/futurism.ttf") format("truetype"),
+        url("../fonts/futurism.svg#Futurism-Light") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+.ios .button.button-white {
+    background-color: #fff;
+    color: #2C3125;
+    border-color: #707070;
+}
+
+.ios .page { background: #fff; }
+.ios .navbar,
+.ios .navbar:after { background: transparent; }
+.ios .navbar i.f7-icons { 
+    font-size: 30px;
+    font-weight: 700;
+    color: #000; 
+}
+.ios .list ul,
+.ios .list ul:after,
+.ios .list ul:before,
+.ios .list .item-inner:after { background-color: transparent; }
+
+.image-fluid { max-width: 100%; height: auto; }
+
+.title { font-size: 26pt; }
+.subtitle { font-size: 16pt; font-family: 'Candara'; }
+
+.page.page-transparent,
+.ios .list ul,
+.ios .list ul:before, 
+.ios .list ul:after { background: transparent; }
+
+.logo-triade { max-width: 100px; height: auto; margin: 5px auto auto; display: table; }
+
+.align-self-end { align-self: flex-end; }
+.justify-content-center { justify-content: center; }
+
+@keyframes efeito_blur_zoon {
+    from {
+        filter: blur(5px); 
+        transform: scale(7.0);      
+    }
+    to {
+        filter: blur(0px);
+        transform: scale(1);
+    }
+}
+
+.page-current {  
+    /*animation: efeito_blur_zoon 2s;*/
+}
+.page-content { margin-top: 20px; transition: all 0.3s ease-in-out; padding-bottom: 50px; }
+
+.sheet-modal-inner .page-content { margin-top: 0; }
+
+.ios .sheet-modal { background: #fff; }
+.ios .block { font-family: 'Candara'; color: #000; }
+.ios .block span { font-size: 17pt; }
+
+.ios .toolbar { height: 30px; background-color: rgba(255, 255, 255, 0.5); }
+.ios .toolbar:before { background-color: transparent; }
+.ios .toolbar .right { width: 100%; text-align: right; }
+.ios .toolbar .right a { display: inline-block; height: 25px; line-height: 25px; margin-left: 3px; }
+.ios .toolbar .right a i { color: #333; font-size: 15pt; }
+
+.ios .button.button-rosa {background: #F2AA9A;border-color: black;color: black;}
+.text-right {text-align: right; display: inline-block; width: 100%;}
+.text-left {text-align: left; display: inline-block; width: 100%;}
+.text-center {text-align: center; display: inline-block; width: 100%;}
+
+.ios .form .list .input-round {
+    border-radius: 29px;
+    background-color: rgba(250,250,245,0.9);
+    height: 48px;
+    border: 1px solid rgba(130,130,130,0.4);
+    padding: 0 20px;
+    text-align: center;
+}
+
+.ios .form .item-input .item-inner {
+    margin-bottom: 10px;
+}
+.ios .form .list .button-large {
+    font-weight: bold;
+    height: 48px;
+    border-color: #707070;
+    color: #1C1E1A;
+    border-width: 1.45px;
+}
+
+.panel-left .list ul { margin-top: 50px; }
+.panel-left .list ul .user { height: 58px; line-height: 58px; background-color: #418486; text-align: center; }
+.panel-left .list ul .user i { color: #245b5d; margin-right: 10px; position: relative; top: 5px; }
+.panel-left .list ul .user span { color: #1C1E1A; }
+.panel-left .links-list a:after {  background-color: #707070; }
+.panel-left .list ul li a { color: #1C1E1A; font-size: 12pt; text-align: center; }
+.panel-left {
+    background: rgba(255, 255, 255, 0.5);
+    border-right: 1px solid #707070;
+}
+.panel-left .list ul li a span { width: 100%; text-align: center; display: block; }
+
+/*Fim dos blocos de estilo referente ao geral*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página de bem-vindos*/
+.page.page-bem-vindo { 
+    background-image: url("../images/bem-vindo.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+    animation: efeito_blur_zoon 2s;
+}
+/*Fim dos blocos de estilo referente à página de bem-vindos*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página home*/
+.page.page-home { 
+    background-image: url("../images/bg_home.png");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-home .logo-triade { max-width: 130px; margin-top: 20px; }
+.page.page-home .navbar-home,
+.page.page-home .panel .list ul {
+    background: transparent;    
+}
+.page.page-home .navbar-home { margin-top: 60px; }
+.page.page-home .navbar-home i.f7-icons { font-size: 35px; font-weight: 700; color: #000; }
+
+.page.page-home .home-list { list-style: none; padding: 0; margin-top: 0; }
+.page.page-home .home-list li { margin-bottom: 10px; }
+.page.page-home .home-list li a { display: block; }
+.page.page-home .home-list li.col-custom { padding: 0 20px; }
+.page.page-home .home-list li.col-custom img { width: auto; max-width: none; height: 100%; }
+.page.page-home .home-list li.col-100 img { width: 100%; box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.5); }
+
+.ios .navbar .left { transition: all .3s ease-in-out; }
+.ios .navbar .left a { padding: 0 10px; }
+.with-panel-left-cover .navbar .left { margin-left: 280px; }
+.with-panel-left-cover .page-content { filter: blur(5px); }
+/*Fim dos blocos de estilo referente à página home*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página de coleção*/
+.page.page-colecao {
+    background-image: url("../images/bg_home.png");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-colecao .page-content {
+    margin-top: -28px;
+    
+}
+.page.page-colecao .circle {
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.page.page-colecao .c1 {
+    background-image: url("../images/bg_01.png");
+    width: 18vh;
+    height: 18vh;
+    top: 40px;
+    right: 20vh;
+}
+.page.page-colecao .c2 {
+    background-image: url("../images/bg_02.png");
+    width: 20vh;
+    height: 20vh;
+    top: 0;
+    right: 0px;
+}
+.page.page-colecao .c3 {
+    background-image: url("../images/bg_03.png");
+    width: 26vh;
+    height: 26vh;
+    top: 27vh;
+    right: 28vh;
+}
+.page.page-colecao .c4 {
+    background-image: url("../images/bg_04.png");
+    width: 27vh;
+    height: 27vh;
+    top: 21vh;
+    right: 5px;
+}
+.page.page-colecao .img-05 {
+    background-image: url("../images/bg_05.png");
+    background-size: 100% auto; 
+    background-position: center -5px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 44vh;
+}
+/*Fim dos blocos de estilo referente à página de coleção*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página de login*/
+.page.page-login, .page.page-cadastro {
+    background-image: url("../images/bg_login.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-login .subtitle {
+    color:#1C1E1A;
+}
+.page.page-login .form, 
+.page.page-cadastro .form {
+    text-align: center;
+    width: calc(100% - 160px);
+    margin: 70px auto auto;
+
+}
+.page.page-login .form .list .button-large {
+    width: 100px;
+    margin: 80px auto auto;
+}
+/*Fim dos blocos de estilo referente à página de login*/
+/*========================================================*/
+
+/*Início dos blocos de estilo referente à página de cadastro*/
+.page.page-cadastro .subtitle  {
+    color: #2C3125;
+}
+.page.page-cadastro .button-cadastrar  {
+    color: #1C1E1A;
+    width: 150px;
+    height: 80px;
+    margin: 20px auto auto;
+    background-image: url("../images/bg_btn_cadastro.jpg");
+    border: 0;
+    line-height: 80px;
+}
+
+
+/*Fim dos blocos de estilo referente à página de cadastro*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página de cadastro realizado com sucesso!*/
+.page.page-cad-sucesso {
+    background: url("../images/bg_login.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-cad-sucesso .sucesso {
+    font-family: "Futurism Light";
+    font-size: 30px;
+    color: #0A0A0A;
+    text-align: center;
+    width: 83%;
+    margin: auto;
+    margin-top: 150px;
+}
+/*Fim dos blocos de estilo referente à página de cadastro realizado com sucesso!*/
+/*========================================================*/
+
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página do sobre*/
+.page.page-sobre {
+    background-image: url("../images/bg_sair.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-sobre .texto-sobre {
+    font-family: 'Candara';
+    font-size: 19px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+/*Fim dos blocos de estilo referente à página do sobre*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página do fale-conosco*/
+.page.page-fale-conosco {
+    background-image: url("../images/bg_fale_conosco.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.page.page-fale-conosco .fale {
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+}
+.page.page-fale-conosco .fale_conosco {
+    font-size: 13pt;
+    text-align: center;
+    color: #56871A;
+    margin: 0;
+}
+.page.page-fale-conosco .img-fale {
+    margin: auto;
+    margin-top: 120px;
+    display: table;
+}
+.page.page-fale-conosco .img-fale img {
+    display: block;
+    margin-top: 10px;
+}
+
+/*Fim dos blocos de estilo referente à página do fale-conosco*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página de ecommerce*/
+.page.page-ecommerce {
+    background-image: url("../images/bg_ecommerce.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-ecommerce .header-loja { 
+    width: 100%;
+    height: 40px;        
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.page.page-ecommerce .header-loja:after,
+.page.page-ecommerce .header-loja:before {
+    height: 60px;
+    content: "";
+    border: 1px solid #000; 
+    position: absolute;
+}
+.page.page-ecommerce .header-loja:after { width: 60%; right: 0; top: 30px; }
+.page.page-ecommerce .header-loja:before { width: 40vh; right: 50px; }
+.page.page-ecommerce .header-loja span {  
+    width: 60%; 
+    position: absolute;
+    right: 0; 
+    top: 56px;
+    color: #56871A;
+    font-size: 23pt;
+    font-family: 'Leixo Demo';
+    display: block;
+    text-align: center;
+    z-index: 1;
+}
+.page.page-ecommerce .image-fluid.img-ecomm {
+    max-width: 163px;
+}
+.page.page-ecommerce .marg {
+    margin-top: 53px;
+    padding: 0px 17px 1px 17px;
+}
+.page.page-ecommerce .list li {
+    margin-bottom: 25px;
+}
+.page.page-ecommerce .font {
+    font-family: 'Candara';
+    font-weight: bold;
+    font-size: 13pt;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+.page.page-ecommerce .price {
+    margin-bottom: 17px;
+}
+/*Fim dos blocos de estilo referente à página de ecommerce*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página do carrinho*/
+.page.page-carrinho {
+    background-image: url("");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+/*Fim dos blocos de estilo referente à página do carrinho*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página de validação*/
+.page.page-validando .validando {
+}
+
+/*Fim dos blocos de estilo referente à página de validação*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página 404*/
+.page.page-404 {
+    background-image: url("../images/bg_404.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-404 .title { 
+    width: 100%;
+    max-width: 250px;
+    font-family: "Futurism Light"; 
+    font-size: 55px; 
+    text-align: center; 
+    color: #000; 
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Fim dos blocos de estilo referente à página 404*/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página sair*/
+.page.page-sair {
+    background-image: url("../images/bg_sair.jpg");
+    background-size: 100% auto; 
+    background-position: center top;
+    background-attachment: fixed;
+}
+.page.page-sair .subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.page.page-sair .grupo .col-25 {
+    padding: 0 1px;
+}
+.page.page-sair .grupo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+
+/*Fim dos blocos de estilo referente à página sair/
+/*========================================================*/
+
+/*========================================================*/
+/*Início dos blocos de estilo referente à página logout*/
+.page.page-logout .abacaxi {
+    display: table;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*Fim dos blocos de estilo referente à página logout/
+/*========================================================*/
+
+
+@media screen and (max-width: 360px) { 
+    .ios .form .list {
+        margin: 25px 0;
+    }
+
+    /*========================================================*/
+    /*Início dos blocos de estilo referente à página home*/
+    .with-panel-left-cover .navbar .left { margin-left: 260px; }
+    .page.page-home .home-list li.col-3 img { height: 115px; width: auto; }
+
+    .ios .form .list .input-round {
+    height: 45px;
+    }
+    .ios .form .list .button-large {
+        height: 45px;
+    }
+    /*Fim dos blocos de estilo referente à página home*/
+    /*========================================================*/ 
+
+    /*========================================================*/
+    /*Início dos blocos de estilo referente à página de login*/
+    .page.page-login .subtitle {
+        font-size: 13pt;
+    }
+    .page.page-login .form {
+        width: calc(100% - 100px);
+    }
+    
+    /*Fim dos blocos de estilo referente à página de login*/
+    /*========================================================*/
+
+
+    /*Início dos blocos de estilo referente à página 404*/
+    .page.page-404 .title { font-size: 44px; }
+    /*Fim dos blocos de estilo referente à página 404*/
+    /*========================================================*/ 
+
+    /*========================================================*/
+     /*Início dos blocos de estilo referente à página de cadastro realizado com sucesso!*/
+
+    .page.page-cad-sucesso .sucesso {
+        font-size: 27px;
+    }
+    /*Fim dos blocos de estilo referente à página de cadastro realizado com sucesso!*/
+    /*========================================================*/
+}
+
+
+
+
+   
+    
+    
