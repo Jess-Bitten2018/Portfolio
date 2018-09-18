@@ -44,24 +44,26 @@
 	    */
 	    helperAnchorAnimateHash: function(){
 	    	var $y = 0;
-	    	setTimeout(function() {
-		    	var $target = window.location.hash;	    		
-			    if ($target) {
-			        var $targetIn = $($target);
-			        $('html, body').stop().animate({
-			            scrollTop: $targetIn.offset().top - $y
-			        }, 1000, 'swing', function() {
-			            //window.location.hash = $target;
-			        });
-			    }
-		    }, 1);
+	    	var $target = window.location.hash;	    		
+		    if ($target) {
+		        var $targetIn = $($target);
+		        $('html, body').stop().animate({
+		            scrollTop: $targetIn.offset().top - $y
+		        }, 1000, 'swing', function() {
+		            //window.location.hash = $target;
+		        });
+		    }
+		    else {
+		    	$('html, body').stop().animate({
+	            	scrollTop: $y
+	        	}, 1000);
+		    }
 
 			//Evento clique que captura links com hash
 		    $("a[rel*=\\#]").on("click", function(e){     
 			    
 			    var $anchor = $(this).attr("rel"),
 			    	$posScroll = $anchor == "#inicio" ? 0 : $($anchor).offset().top - $y;
-
 
 		    	if( $("*").is($anchor) ){
 
